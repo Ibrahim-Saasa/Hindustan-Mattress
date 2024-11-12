@@ -333,6 +333,7 @@ footer .col {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
+  padding: 5px;
 }
 .pay {
   width: 50px;
@@ -352,6 +353,8 @@ footer .copyright {
 }
 footer h4 {
   padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
 }
 footer a {
   font-size: 13px;
@@ -359,8 +362,20 @@ footer a {
   color: #222;
   margin-bottom: 10px;
 }
+footer a:hover {
+  color: #088178;
+  transition: 0.3s ease;
+}
 footer i:hover {
   cursor: pointer;
   background-color: #088178;
   transition: 0.3s ease;
+}
+footer img {
+  border: 1px solid #088178;
+  cursor: pointer;
+}
+footer .logo {
+  border: none;
+  padding-bottom: 15px;
 }
