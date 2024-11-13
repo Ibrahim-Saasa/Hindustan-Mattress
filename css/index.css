@@ -101,9 +101,6 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-#hero p {
-  color: rgb(88, 186, 224);
-}
 #hero h1 {
   color: #088178;
   font-family: monospace;
