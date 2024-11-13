@@ -8,6 +8,8 @@ h1 {
   font-size: 50px;
   line-height: 64px;
   color: #222;
+  white-space: normal;
+  max-width: 100%;
 }
 h2 {
   font-size: 46px;
@@ -24,7 +26,7 @@ h6 {
 }
 p {
   font-size: 16px;
-  color: #088178;
+  color: var(--h1);
   margin: 15px 0 20px 0;
 }
 .section-p1 {
@@ -35,25 +37,28 @@ p {
 }
 body {
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 #header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 20px;
-  background: rgb(246, 247, 216);
+  background: var(--background);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  gap: 950px;
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
 }
 .logo {
-  width: 200px;
+  width: 100px;
+  margin-right: auto;
 }
 .cart {
   width: 20px;
+  background-color: var(--h1);
 }
 #navbar {
   display: flex;
@@ -81,7 +86,7 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--h1);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -92,6 +97,7 @@ body {
 }
 #hero {
   background-image: url("background.png");
+  /* filter: invert(95%) hue-rotate(180deg); */
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -102,11 +108,11 @@ body {
   justify-content: center;
 }
 #hero h1 {
-  color: #088178;
+  color: var(--h1);
   font-family: monospace;
   /* margin-inline: auto; */
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   border-right: 1px solid;
   animation: typing 3s steps(31) forwards, blink 1s step-end infinite;
 }
@@ -126,7 +132,7 @@ body {
 #hero button {
   /* background-image: url("button.png"); */
   background-color: hsl(62, 66%, 85%);
-  color: #088178;
+  color: var(--h1);
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -135,7 +141,7 @@ body {
   border-radius: 5px;
 }
 #hero button:hover {
-  background-color: #088178;
+  background-color: var(--h1);
   color: hsl(62, 66%, 85%);
   transition: 1s ease-in-out;
 }
@@ -169,7 +175,7 @@ body {
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
-  color: #088178;
+  color: var(--h1);
   background-color: #fddde4;
 }
 #feature .fe-box:nth-child(2) h6 {
@@ -230,7 +236,7 @@ body {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: #088178;
+  color: var(--h1);
 }
 #product1 .pro .cart {
   width: 30px;
@@ -239,7 +245,7 @@ body {
   border-radius: 50px;
   background-color: #e8f6ea;
   font-weight: 500;
-  color: #088178;
+  color: var(--h1);
   border-color: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
@@ -258,6 +264,7 @@ body {
   align-items: center;
   text-align: center;
   background-image: url("repair.webp");
+  /* filter: invert(95%) hue-rotate(180deg); */
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -268,7 +275,7 @@ body {
   font-size: 16px;
 }
 #banner h2 {
-  color: #088178;
+  color: var(--h1);
   font-size: 30px;
   padding: 10px 0;
 }
@@ -276,7 +283,7 @@ button.normal {
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
-  color: #088178;
+  color: var(--h1);
   background-color: hsl(62, 66%, 85%);
   border-radius: 4px;
   cursor: pointer;
@@ -285,7 +292,7 @@ button.normal {
   transition: 0.2s;
 }
 #banner button:hover {
-  background-color: #088178;
+  background-color: var(--h1);
   color: rgb(245, 185, 185);
 }
 #sm-banner {
@@ -300,11 +307,13 @@ button.normal {
   align-items: flex-start;
   text-align: center;
   background-image: url("cushion-banner.jpg");
-  min-width: 588px;
+  /* filter: invert(95%) hue-rotate(180deg); */
+  min-width: 100%;
   height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 30px;
+  margin-bottom: 15px;
 }
 #sm-banner h4 {
   color: wheat;
@@ -312,13 +321,13 @@ button.normal {
   font-weight: 300;
 }
 #sm-banner h2 {
-  color: #088178;
+  color: var(--h1);
 
   font-size: 28px;
   font-weight: 800;
 }
 #sm-banner span {
-  color: #088178;
+  color: var(--h1);
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 15px;
@@ -335,18 +344,19 @@ button.white {
   transition: 0.2s;
 }
 #sm-banner .banner-box:hover button {
-  background: #088178;
-  border: 1px solid #088178;
+  background: var(--h1);
+  border: 1px solid var(--h1);
   color: wheat;
 }
 #sm-banner .banner-box2 {
   background-image: url("Guarantee.webp");
+  /* filter: invert(95%) hue-rotate(180deg); */
 }
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: rgb(246, 247, 216);
+  background: var(--background);
 }
 footer .col {
   display: flex;
@@ -383,16 +393,16 @@ footer a {
   margin-bottom: 10px;
 }
 footer a:hover {
-  color: #088178;
+  color: var(--h1);
   transition: 0.3s ease;
 }
 footer i:hover {
   cursor: pointer;
-  background-color: #088178;
+  background-color: var(--h1);
   transition: 0.3s ease;
 }
 footer img {
-  border: 1px solid #088178;
+  border: 1px solid var(--h1);
   cursor: pointer;
 }
 footer .logo {
@@ -401,115 +411,8 @@ footer .logo {
 }
 #close {
   display: none;
-}
-@media (max-width: 799px) {
-  .section-p1 {
-    padding: 40px 40px;
-  }
-  #navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: #e3e6f3;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 80px 0 0 10;
-    transition: 0.3s;
-  }
-  #navbar.active {
-    right: 0px;
-  }
-  #navbar li {
-    margin-bottom: 25px;
-  }
-  #mobile {
-    display: flex;
-    align-items: center;
-  }
-  #mobile i {
-    color: #222;
-    font-size: 24px;
-    padding-left: 20px;
-  }
-  #close {
-    display: initial;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    font-size: 24px;
-    color: #222;
-  }
-  #lg-bag {
-    display: none;
-  }
-  #hero {
-    /* background-image: url("background.png"); */
-    height: 70vh;
-    /* width: 100%; */
-    /* background-size: cover; */
-    padding: 0 80px;
-    background-position: top 30% right 30%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; */
-  }
-  #feature {
-    justify-content: center;
-  }
-  #feature .fe-box {
-    max-width: 15px 15px;
-  }
-  #product1 .pro-container {
-    justify-content: center;
-  }
-  #product1 .pro {
-    margin: 15px;
-  }
-  #sm-banner .banner-box {
-    min-width: 100%;
-    height: 30vh;
-  }
-}
-@media (max-width: 477px) {
-  #header {
-    padding: 10px 30px;
-  }
-  #hero {
-    padding: 0 20px;
-    background-position: 55%;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h1 {
-    font-size: 38px;
-  }
-  .section-p1 {
-    padding: 20px;
-  }
-  #feature .fe-box {
-    width: 155px;
-    margin: 0 0 15px 0;
-  }
-  #feature {
-    justify-content: space-between;
-  }
-  #product1 .pro {
-    width: 100%;
-  }
-  #banner {
-    height: 40vh;
-  }
-  #sm-banner .banner-box {
-    height: 40vh;
-  }
-  footer .copyright {
-    text-align: start;
-  }
+  position: absolute;
+  font-size: 24px;
+  color: #222;
+  z-index: 1000;
 }
