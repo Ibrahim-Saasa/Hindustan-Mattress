@@ -1,0 +1,87 @@
+#page-header {
+  background-image: url("hero.jpg");
+  /* filter: invert(95%) hue-rotate(180deg); */
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#page-header h1 {
+  color: var(--h1);
+  font-family: monospace;
+  /* margin-inline: auto; */
+  overflow: hidden;
+  /* white-space: nowrap; */
+  border-right: 1px solid;
+  /* animation: typing 3s steps(31) forwards, blink 1s step-end infinite; */
+}
+#page-header button {
+  /* background-image: url("button.png"); */
+  background-color: hsl(62, 66%, 85%);
+  color: var(--h1);
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#page-header button:hover {
+  background-color: var(--h1);
+  color: hsl(62, 66%, 85%);
+  transition: 1s ease-in-out;
+}
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: var(--h1);
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: var(--background);
+  font-weight: 600;
+}
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails .single-pro-details .normal:hover {
+  background-color: var(--h1);
+  color: var(--background);
+  transition: 1s ease;
+}
+#prodetails .single-pro-img {
+  width: 40%;
+  margin-right: 50px;
+}
