@@ -76,10 +76,16 @@
   font-size: 16px;
   margin-right: 10px;
 }
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
 #prodetails .single-pro-details .normal:hover {
   background-color: var(--h1);
   color: var(--background);
   transition: 1s ease;
+}
+#prodetails .single-pro-details span {
+  line-height: 25px;
 }
 #prodetails .single-pro-img {
   width: 40%;

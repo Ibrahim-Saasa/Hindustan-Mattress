@@ -138,4 +138,16 @@
     font-size: 32px;
     line-height: 40px;
   }
+  /* single Product */
+
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img {
+    width: 100%;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
 }
