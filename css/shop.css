@@ -92,3 +92,13 @@
   width: 40%;
   margin-right: 50px;
 }
+@media (max-width: 477px) {
+  .pun {
+    font-size: 15px;
+  }
+
+  .sale {
+    font-size: 15px;
+    /* line-height: 5px; */
+  }
+}
