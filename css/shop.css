@@ -52,6 +52,7 @@
 }
 #prodetails {
   display: flex;
+  /* flex-wrap: wrap; */
   margin-top: 20px;
 }
 #prodetails .single-pro-details {

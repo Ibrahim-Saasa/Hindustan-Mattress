@@ -58,7 +58,6 @@ body {
 }
 .cart {
   width: 20px;
-  background-color: var(--h1);
 }
 #navbar {
   display: flex;
