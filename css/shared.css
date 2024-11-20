@@ -18,7 +18,7 @@
     transition: none;
   }
 }
-@media (max-width: 799px) {
+@media (max-width: 811px) {
   .section-p1 {
     padding: 40px 40px;
   }

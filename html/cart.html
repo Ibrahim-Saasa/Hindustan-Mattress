@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="../images/favicon.jpg" />
-    <link type="text/css" rel="stylesheet" href="../css/about.css" />
+    <link type="text/css" rel="stylesheet" href="../css/cart.css" />
     <link type="text/css" rel="stylesheet" href="../css/index.css" />
     <link type="text/css" rel="stylesheet" href="../css/shared.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -27,10 +27,10 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="../html/shop.html">Shop</a></li>
           <li><a href="../html/blog.html">Blog</a></li>
-          <li><a class="active" href="../html/about.html">About</a></li>
+          <li><a href="../html/about.html">About</a></li>
           <li><a href="../html/contact.html">Contact</a></li>
           <li id="lg-bag">
-            <a href="./html/cart.html"
+            <a class="active" href="../html/cart.html"
               ><img
                 src="../images/bed-double-heart-svgrepo-com.svg"
                 class="cart"
@@ -42,7 +42,7 @@
         </ul>
       </div>
       <div id="mobile">
-        <a href="../html/cart.html"
+        <a href="./html/cart.html"
             ><img
               src="../images/bed-double-heart-svgrepo-com.svg"
               class="cart"
@@ -54,59 +54,61 @@
     </section>
 
     <section id="page-header" class="section-p1">
-      <h1 class="sale">#KnowUs</h1>
-      <h4>The comfiest deals you’ll ever rest on.</h4>
     </section>
 
-    <section id="about-head">
-        <img src="../images/about.jfif" alt="">
-        <div class="dis"> 
-            <h2>Who Are We?</h2>
-            <p>One of the very few mattress company that is owned and operated locally in pune, started from humble beginnings, this company has 
-                now been transformed into one of India's top selling flexi mattresses. All owned and operated by a single man, named Huzaifa Fatakrawala.
-                From just a childhood dream, to an incredible factory that employees over 30 people, we have now been in this business for more than 30 years.
-                All guided through a single dream and goal, to give the best comfort to all those who are in need.
-            </p>
-            <abbr title="">Come Visit our store and meet are experienced employees to get your own customized mattress fit for your specific needs.</abbr>
-            <marquee loop="-1" class="marquee" scrollamount="5" width="90%">Get the best mattresses for every need and feel like a King/Queen in your home the best
-                prices in the business. All mattresses come with a Warranty as well as a Guarantee that insures you’ll be satisfied for a long time!
-            </marquee>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash" color="black"></i></a></td>
+                    <td><img src="../images/1.jpg" alt=""></td>
+                    <td>SlumberSoft 4" Mattress</td>
+                    <td>&#8377 14,040.00</td>
+                    <td><input type="number" name="" id="" value="1"></td>
+                    <td>&#8377 14,040.00</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1>Feel The Comfort</h1>
-        <div class="video">
-            <video autoplay muted loop src="../images/video.mp4" class="vid"></video>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" name="" id="" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total:</h3>
+            <table>
+                <tr>
+                    <td>Cart SubTotal</td>
+                    <td>&#8377 14,040.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>&#8377 14,040.00</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed To Payment</button>
         </div>
     </section>
-
-    <section id="feature" class="section-p1 hidden">
-        <div class="fe-box">
-          <img src="../images/shipping.jpeg" class="fe-img" />
-          <h6>Seamless Shipping</h6>
-        </div>
-        <div class="fe-box">
-          <img src="../images/Online Order.webp" class="fe-img" />
-          <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-          <img src="../images/save money.webp" class="fe-img" />
-          <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-          <img src="../images/promotions.webp" class="fe-img" />
-          <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-          <img src="../images/happy sell.webp" class="fe-img" />
-          <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-          <img src="../images/247 support.webp" class="fe-img" />
-          <h6>24/7 Support</h6>
-        </div>
-      </section>
 
     <footer class="section-p1">
       <div class="col">
