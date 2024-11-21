@@ -52,8 +52,9 @@
 }
 #prodetails {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-top: 20px;
+  align-items: flex-start;
 }
 #prodetails .single-pro-details {
   width: 50%;
