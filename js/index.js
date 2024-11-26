@@ -14,11 +14,11 @@ if (bar) {
   });
 }
 
-// if (close) {
-//   close.addEventListener("click", () => {
-//     nav.classList.remove("active");
-//   });
-// };
+if (close) {
+  close.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+};
 
 // function sendToWhatsapp() {
 //   let number = "+919421035852";
