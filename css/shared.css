@@ -13,12 +13,102 @@
   filter: blur(0);
   transform: translateX(0);
 }
+#header #navbar #lg-bag {
+  position: relative;
+}
+#header #navbar #lg-bag span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+}
+body .showCart .cartTab {
+  inset: 0 0 0 auto;
+}
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartTab .btn button {
+  background-color: teal;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+.cartTab .listCart .item img {
+  width: 50px;
+  margin-top: 100px;
+}
+.cartTab .listCart .item {
+  width: 240px;
+  display: grid;
+  grid-template-columns: 70px 50px 70px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.listCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.listCart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: teal;
+}
+.listCart .item:nth-child(even) {
+  background-color: antiquewhite;
+}
+.listCart {
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar {
+  width: 0;
+}
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
   }
 }
 @media (max-width: 811px) {
+  #header #navbar #lg-bag {
+    position: relative;
+  }
+  #header #navbar #lg-bag span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+  }
   .section-p1 {
     padding: 40px 40px;
   }
@@ -97,6 +187,9 @@
     height: 30vh;
     margin-bottom: 5px;
   }
+  #product1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 477px) {
   #header {
@@ -149,5 +242,8 @@
   }
   #prodetails .single-pro-details {
     width: 100%;
+  }
+  #product1 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
